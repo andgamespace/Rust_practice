@@ -1,34 +1,108 @@
-# Generated files
+# Rust build artifacts
 /target/
 **/*.rs.bk
-Cargo.lock
-# Only for binary projects, comment out for libraries
+debug/
+release/
+
+# Dependencies
+# Uncomment the next line if it's a library
 # Cargo.lock
 
-# IDE specific files
+# IDE and editor files
 .idea/
 .vscode/
 *.swp
 *.swo
+*.vim
+.atom/
+.eclipse/
+.settings/
+*.sublime-*
+.project
+.classpath
+.factorypath
+*.iml
+
+# OS specific files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Debug files
-*.pdb
-
-# Rust profiling and benchmarking
-flamegraph.svg
-perf.data
-perf.data.old
-
-# Environment variables
+# Environment files
 .env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Debug and profiling
+*.pdb
+callgrind.out.*
+flamegraph.svg
+perf.data*
+*.speedscope.json
+*.heaptrack
+*.massif
+*.folded
 
 # Documentation
 /doc/
+/docs/
+/target/doc/
+/book/
+
+# Backup files
+*~
+*.bak
+*.backup
+*.orig
 
 # Build artifacts and caches
 /.cargo/
 /build/
+/.rustc_info.json
+/.fingerprint/
+/.rustdoc_fingerprint.json
 
-# Remove if you're using macOS and want to ignore shell's .DS_Store
-.DS_Store
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test coverage
+*.gcda
+*.gcno
+*.profraw
+coverage/
+lcov.info
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# If using wasm-pack
+/pkg/
+/wasm-pack.log
+
+# If using cross-compilation
+/cross/
+
+# If using nix
+/result
+/result-*
+
+# Benchmark results
+bench-results/
+criterion_result/
+
+# Custom ignores
+# Add your project-specific ignores below
