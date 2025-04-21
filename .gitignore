@@ -1,0 +1,156 @@
+# Rust project .gitignore file
+
+# Compiled files and build artifacts
+/target/
+**/*.rs.bk
+*.o
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+*.pdb
+
+# Cargo specific
+# For applications: include Cargo.lock
+# For libraries: don't include Cargo.lock (uncomment line below)
+# Cargo.lock
+
+# Include Cargo.lock by default (for applications)
+# Remove the line below if this is a library
+Cargo.lock
+
+# Debug info
+/debug/
+
+# IDE and editor files
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# Neovim
+*.swp
+*.swo
+*~
+.*.sw?
+.netrwhist
+Session.vim
+Sessionx.vim
+.undodir/
+.exrc
+.nvimrc
+.nvim.lua
+.vim/
+.nvimlog
+
+# Zed
+.zedstate
+.zed/
+
+# Eclipse
+.project
+.settings/
+.classpath
+.factorypath
+.checkstyle
+
+# Other editors
+*.sublime*
+.atom/
+
+# Profiling and performance artifacts
+/flamegraph.svg
+/perf.data*
+/callgrind.out.*
+/cachegrind.out.*
+/massif.out.*
+
+# Test and coverage artifacts
+*.profraw
+/coverage/
+.tarpaulin-report.html
+codecov.yml
+
+# Documentation
+/doc/
+/target/doc/
+/book/
+
+# Benchmark artifacts
+/criterion/
+/benches/target/
+
+# Environment variables and local configuration
+.env
+.env.*
+!.env.example
+.cargo-ok
+
+# Dependency directories
+/vendor/
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux specific files
+.directory
+.Trash-*
+
+# Log files
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.swp
+
+# Incremental compilation database
+/target/incremental/
+
+# Cross-compilation artifacts
+/target/*-unknown-*
+Cross.toml
+
+# Keep these files/directories (examples)
+!src/
+!examples/
+!benches/
+!tests/
+!Cargo.toml
+!.cargo/config.toml
+!build.rs
+!rust-toolchain.toml
+!rustfmt.toml
+!clippy.toml
+!/.github/workflows/
+!/scripts/
