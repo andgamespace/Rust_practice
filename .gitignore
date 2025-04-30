@@ -376,7 +376,7 @@ tmp/
 temp/
 .temp/
 .tmp/
-
+target/
 # Local configuration files
 .env.local
 .env.development.local
