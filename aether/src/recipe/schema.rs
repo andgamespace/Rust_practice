@@ -1,10 +1,3 @@
-// the schema that all recipes are to follow
+use std::collections::HashMap;
+use serde::{Deserialize, Serialize};
 
-pub mod schema {
-    pub struct Package {
-        pub name: String,
-        pub version: String,
-        pub hash: String,
-        dependencies: Vec<String>, //List of all dependencies that a pa
-    }
-}
