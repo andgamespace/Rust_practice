@@ -1,0 +1,8 @@
+[package]
+name = "voxel_engine"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wgpu = "25.0.0"
+winit = "0.30.11"
